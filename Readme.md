@@ -1,5 +1,5 @@
 
-Factorio's Rail pathfinder is [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) with various penalties to the distances based on entities attached to the rail, and trains on the rail. This mod allows adjusting these weights.
+Factorio's Rail pathfinder is [Dijkstra's_algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) with various penalties to the distances based on entities attached to the rail, and trains on the rail. This mod allows adjusting these weights.
 
 The pathfinder first builds a list of non-disabled stops that match the name in the schedule, then searches outward from both ends of the train at once, if applicable, in segments. A segment is an uninterrupted plain sequence of rails, with no intersections, stops, or signals (all of which define segment borders). The base distance for a segment is it's length (linear grid length along the center of the rail), which is then adjusted as follows:
 
